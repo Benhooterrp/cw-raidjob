@@ -81,7 +81,7 @@ local CokeItems = {
     FetchItem = 'securitycase', -- item (inventory)
     FetchItemProp = 'hei_prop_hei_security_case', -- item (world object)
     FetchItemContents = 'coke_pure', -- item that drops from FetchItem after FetchItemTime is over
-    FetchItemContentsAmount = 20, -- Amount of FetchItemContent items
+    FetchItemContentsAmount = 60, -- Amount of FetchItemContent items
     FetchItemMinigame = {
         Type = 'Circle',
         Variables = { 2, 20 }
@@ -139,8 +139,8 @@ local CokeVehicles = {
 }
 
 local CokeSpecialRewards = {
-    { Item = 'coke_pure', Amount = math.random(20, 30), Chance = 85 },
-    { Item = 'finescale', Amount = 1, Chance = 50 }
+    { Item = 'coke_pure', Amount = math.random(20, 30), Chance = 90 },
+    { Item = 'finescale', Amount = 1, Chance = 70 }
 }
 
 local CokeMessages = {
@@ -159,8 +159,8 @@ local CokeJob = {
     Vehicles = CokeVehicles,
     Items = CokeItems,
     MinimumPolice = 0,
-    RunCost = 3500,
-    Payout =  math.random(2000, 5000),
+    RunCost = 15000,
+    Payout =  math.random(150000, 220000),
     SpecialRewards = CokeSpecialRewards,
     Messages = CokeMessages 
 }
